@@ -1,0 +1,284 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+
+          {% if name %}
+          <h1 class="mb-0"> {{ name }}, PhD<br>
+            <span class="text-primary">Data scientist</span>
+          </h1>
+		  {% else %}
+		  <h1 class="mb-0">MOM<br>
+            <span class="text-primary">Man of Miracle</span>
+          </h1>
+          {% endif %}
+
+          <div class="subheading mb-5">3, rue Wauthier 78100 Saint-Germain-en-Laye · (+33)6 50 67 38 13 ·
+            <a href="valeriegrimault@yahoo.fr">valeriegrimault@yahoo.fr</a>
+          </div>
+          <!--<p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>-->
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/valeriegrimault">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/ValerieGrimault">
+              <i class="fab fa-github"></i>
+            </a>
+            <!--<p<a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>-->
+          </div>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Expérience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Chargée d'études et d'enseignement</h3>
+              <div class="subheading mb-3">CNRS (Centre National de Recherche Scientifique)<br>
+                LAMIH (Laboratoire d'Automatique, de Mécanique et d'Informatique Industrielles et Humaines)<br>
+                Université Polytechnique Hauts-de-France
+              </div>
+              <!--<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>-->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2016 - 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Chargée d'études et d'enseignement</h3>
+              <div class="subheading mb-3">IUT GEA (Gestion des Entreprises et des Administrations)<br>
+              Université du Havre
+              </div>
+              <!--<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>-->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2015 - 2016</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Chargée de cours</h3>
+              <div class="subheading mb-3">Centre Henri Piéron, institut de psychologie<br>
+              Université Paris-V
+              </div>
+              <!--<p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>-->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2014 - 2015</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Assistante pédagogique</h3>
+              <div class="subheading mb-3">Collège Louis Paulhan<br>
+              Sartrouville
+              </div>
+              <!--<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>-->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2012 - 2013</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Enseignante en statistiques</h3>
+              <div class="subheading mb-3">Acadomia<br>
+              Saint-Germain-en-Laye
+              </div>
+              <!--<p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>-->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2011 - 2013</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Education</h2>
+
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Jedha</h3>
+              <div class="subheading mb-3">Formation full-time data science</div>
+              <!--<div>Computer Science - Web Development Track</div>
+              <p>GPA: 3.23</p>-->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2018 - 2019</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Université Paris-X</h3>
+              <div class="subheading mb-3">Doctorat en sciences cognitives</div>
+              <!--<div>Computer Science - Web Development Track</div>
+              <p>GPA: 3.23</p>-->
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">2011 - 2015</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Compétences</h2>
+
+          <div class="subheading mb-3">Langages de programmation &amp; Outils</div>
+          <ul class="list-inline dev-icons">
+            <li class="list-inline-item">
+              <i class="fab fa-python"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-css3-alt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-js-square"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-java"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fas fa-database"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Activités</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Machine learning</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Deep learning</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Big data</li>
+          </ul>
+        </div>
+      </section>
+
+      <!--<hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        </div>
+      </section>
+
+      <hr class="m-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Google Analytics Certified Developer</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Mobile Web Specialist - Google Certification</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2<sup>nd</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - James Buchanan High School - Hackathon 2006</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              3<sup>rd</sup>
+              Place - James Buchanan High School - Hackathon 2005</li>
+          </ul>
+        </div>
+      </section>-->
+
+	<hr class="m-0">
+
+  <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="formulaire">
+	<div class="my-auto">
+		<h2 class="mb-5">Contact</h2>
+		<div class="contact d-flex flex-column align-items-center" id="contact">
+
+		<p class="lead mb-5">Détaillez votre projet, nous vous attribuons l'étudiant le plus à même de répondre à votre besoin</p>
+		<form class="d-flex flex-column align-items-center" action="{{ url_for('project') }}" method="POST">
+			<div class="d-flex flex-row col-md-6 mr-5">
+				<p><label>Nom
+					<input type="text" name="nom_utilisateur">
+				</label></p>
+			</div>
+			<div class="d-flex flex-row col-md-6 mr-5">
+				<p><label>Email
+					<input type="email" name="email_utilisateur">
+				</label></p>
+			</div>
+			<div class="d-flex flex-row col-md-6 mr-5">
+				<p><label>Mon projet
+					<textarea name="message_utilisateur"></textarea>
+				</label></p>
+			</div>
+		<div class="button d-flex justify-content-center">
+			<input type="hidden" name="_next" value="thanksEntreprise.html" />
+			<input type="submit" value="Envoyer">
+		</div>
+		</form>
+		</div>
+	</div>
+</section> 
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/static/js/resume.min.js"></script>
+
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
+<!--Enter Name -->
+<div style="padding:10px;">
+    <div class="enter-name">
+      <form action="{{ url_for('predict') }}" method="POST">
+        <label>Année d'expérience</label>
+        <input type="integer" name="YearsExperience" value="10" autofocus>
+        <input type="submit" value="Let's predict salary!">
+    </form>
+  </div>
+
+  <div>
+    <span>
+      Currently it is {{
+      forecast["currently"]["temperature"]
+    }} Fahrenheit
+
+    </span>
+
+    <span>
+      which is {{
+      (forecast["currently"]["temperature"] - 32)*5/9}} Degrees Celsius
+    </span>
+  </div>
+
+  <div>
+    <span>
+       {{
+      forecast["hourly"]["summary"]
+    }}
+
+    </span>
+  </div>
+</div>
+</section>
+{% endblock %}
